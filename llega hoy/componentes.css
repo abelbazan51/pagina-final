@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: blanchedalmond;
+}
+.flex-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-auto-rows: 150px;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header"
+    "sidebar content "
+    "sidebar content"
+    "sidebar content";
+}
+
+.flex-item {
+  font-size: 1.5rem;
+  padding: 50px 20px 20px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid antiquewhite;
+}
+.flex-item-1 {
+  grid-area: header;
+}
+.flex-item-2 {
+  grid-area: sidebar;
+}
+.flex-item-3 {
+  grid-area: content;
+}
