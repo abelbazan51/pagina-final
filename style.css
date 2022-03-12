@@ -415,3 +415,22 @@ nav {
   color: cadetblue;
 }
 /*# sourceMappingURL=style.css.map */
+/*mixin*/
+
+@mixin mixin-1($width, $height) {
+  height: $height;
+  width: $width;
+}
+.mixin-1 {
+  @include mixin-1(80%, 50%);
+  background-color: #000000;
+}
+.parrafowid {
+  @include mixin-1(120%, 120%);
+  color: cadetblue;
+}
+.parrafowid {
+  height: 120%;
+  width: 70%;
+  color: cadetblue;
+}
