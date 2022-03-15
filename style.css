@@ -25,7 +25,7 @@
 }
 
 html {
-  height: 100px;
+  width: 100%;
 }
 
 body {
@@ -155,7 +155,7 @@ button {
 }
 
 .titulo--grande {
-  width: 800px;
+  width: 50%;
   color: turquoise;
 }
 
@@ -327,7 +327,7 @@ button {
 .parrafos2 {
   display: -ms-grid;
   display: grid;
-  font-size: 13%;
+
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: parrafos2;
