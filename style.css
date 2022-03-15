@@ -192,7 +192,7 @@ button {
 
 .contacto-pie {
   background-color: #272626;
-  width: 100%;
+  width: 40%;
   padding: 2rem;
   -webkit-box-shadow: 0rem 10px 30px -10px #e40808;
   box-shadow: 0rem 10px 30px -10px #e40808;
@@ -202,7 +202,7 @@ button {
 .btn-neon {
   position: relative;
   display: inline-block;
-  padding: 30px 60px;
+  padding: 30px 9px;
   color: aliceblue;
   letter-spacing: 4px;
   font-size: 1rem;
@@ -253,7 +253,7 @@ button {
 }
 
 .letrass--2 {
-  width: 900px;
+  width: 79%;
 }
 
 .imagen-index {
@@ -433,4 +433,14 @@ nav {
   height: 120%;
   width: 70%;
   color: cadetblue;
+
+
+
 }
+
+
+
+
+
+ @media  screen and (max-width: 470px) {
+.logitos{ display: none;}
