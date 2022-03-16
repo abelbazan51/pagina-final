@@ -54,6 +54,7 @@ body {
   background-color: #242323;
   padding: 3%;
   margin: 1%;
+  color: #e01515;
 }
 
 .logos1 {
@@ -189,10 +190,15 @@ button {
   overflow: hidden;
   width: 100%;
 }
+.titulo-quienessomos{
+  font-size: 200%;
+  align-items: center;
+}
 
 .contacto-pie {
   background-color: #272626;
   width: 40%;
+  
   padding: 2rem;
   -webkit-box-shadow: 0rem 10px 30px -10px #e40808;
   box-shadow: 0rem 10px 30px -10px #e40808;
@@ -202,7 +208,7 @@ button {
 .btn-neon {
   position: relative;
   display: inline-block;
-  padding: 30px 9px;
+  padding: 1% 3% 2%;
   color: aliceblue;
   letter-spacing: 4px;
   font-size: 1rem;
@@ -278,6 +284,7 @@ button {
   align-items: flex-start;
   background-color: #242323;
 }
+
 
 .flex-item {
   width: 0px;
@@ -433,11 +440,10 @@ nav {
   height: 120%;
   width: 70%;
   color: cadetblue;
-
+margin:4%;
 
 
 }
-
 
 
 
