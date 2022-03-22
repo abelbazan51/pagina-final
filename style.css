@@ -1,7 +1,10 @@
+@import url(c:\Users\Abelito\Desktop\mis paginas web\coderhouse\2clase html\variable.css);
 * {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
 }
 
 .flex-cabezerademenu {
@@ -24,8 +27,12 @@
   color: #7ad691;
 }
 
+.p-5 {
+  background-color: rgb(156, 104, 96);
+}
+
 html {
-  width: 100%;
+  height: 100px;
 }
 
 body {
@@ -54,7 +61,6 @@ body {
   background-color: #242323;
   padding: 3%;
   margin: 1%;
-  color: #e01515;
 }
 
 .logos1 {
@@ -156,8 +162,9 @@ button {
 }
 
 .titulo--grande {
-  width: 50%;
+  width: 800px;
   color: turquoise;
+  font-size: 34px;
 }
 
 .cuerpo1--zonas {
@@ -190,15 +197,10 @@ button {
   overflow: hidden;
   width: 100%;
 }
-.titulo-quienessomos{
-  font-size: 200%;
-  align-items: center;
-}
 
 .contacto-pie {
   background-color: #272626;
-  width: 40%;
-  
+  width: 100%;
   padding: 2rem;
   -webkit-box-shadow: 0rem 10px 30px -10px #e40808;
   box-shadow: 0rem 10px 30px -10px #e40808;
@@ -208,7 +210,7 @@ button {
 .btn-neon {
   position: relative;
   display: inline-block;
-  padding: 1% 3% 2%;
+  padding: 30px 60px;
   color: aliceblue;
   letter-spacing: 4px;
   font-size: 1rem;
@@ -259,7 +261,7 @@ button {
 }
 
 .letrass--2 {
-  width: 79%;
+  width: 900px;
 }
 
 .imagen-index {
@@ -284,7 +286,6 @@ button {
   align-items: flex-start;
   background-color: #242323;
 }
-
 
 .flex-item {
   width: 0px;
@@ -334,7 +335,7 @@ button {
 .parrafos2 {
   display: -ms-grid;
   display: grid;
-
+  font-size: 13%;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: parrafos2;
@@ -422,35 +423,3 @@ nav {
   color: cadetblue;
 }
 /*# sourceMappingURL=style.css.map */
-/*mixin*/
-
-@mixin mixin-1($width, $height) {
-  height: $height;
-  width: $width;
-}
-.mixin-1 {
-  @include mixin-1(80%, 50%);
-  background-color: #000000;
-}
-.parrafowid {
-  @include mixin-1(120%, 120%);
-  color: cadetblue;
-}
-.parrafowid {
-  height: 120%;
-  width: 70%;
-  color: cadetblue;
-margin:4%;
-
-
-}
-
-
-
-
- @media  screen and (max-width: 470px) {
-.logitos{ display: none;}
-.contactor{
-  padding: ;
-}
-
