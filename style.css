@@ -1,4 +1,4 @@
-@import url(c:\Users\Abelito\Desktop\mis paginas web\coderhouse\2clase html\variable.css);
+@import url(c:\Users\Abelito\Desktop\mispaginasweb\coderhouse\2clasehtml\variable.css);
 * {
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -33,6 +33,7 @@
 
 html {
   height: 100px;
+  padding: 0;
 }
 
 body {
@@ -153,8 +154,9 @@ button {
 }
 
 .cuerpo1--parrafo {
-  color: #818385e7;
+  color: snow;
   font-size: 22px;
+  padding: 10px;
 }
 
 .imagen-index {
