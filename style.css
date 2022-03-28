@@ -1,18 +1,26 @@
 @import url(c:\Users\Abelito\Desktop\mispaginasweb\coderhouse\2clasehtml\variable.css);
+
 * {
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
   text-decoration: none;
 }
 
 .flex-cabezerademenu {
   background-color: black;
-  font-size: 0.2rem;
+  font-size: 0.1rem;
   width: top;
 }
 
+.tituloquienessomos2 {
+  color: aqua;
+}
+
+.titulo-quienesosmos {
+  color: aqua;
+}
 .tarjeta {
   background-color: black;
   overflow: 100%;
@@ -22,26 +30,27 @@
 .letramenu {
   color: darkgrey;
 }
+.navcollapse
 
 .parrafo1 {
   color: #7ad691;
 }
 
 .p-5 {
-  background-color: rgb(156, 104, 96);
+  background-color: #9c6860;
 }
 
 html {
   height: 100px;
   padding: 0;
+  background-color: #000000;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: auto;
   background-color: #11100f;
-  width: 99%;
+  color: black;
 }
 
 .parrafo2 {
@@ -63,7 +72,9 @@ body {
   padding: 3%;
   margin: 1%;
 }
-
+.listamenu {
+  margin-bottom: auto;
+}
 .logos1 {
   font-size: 8px;
 }
@@ -85,6 +96,7 @@ body {
 
 .porqueelejirnos1 {
   font-size: 20px;
+  padding: 20px;
 }
 
 .nav__list {
@@ -157,6 +169,7 @@ button {
   color: snow;
   font-size: 22px;
   padding: 10px;
+  width: 90%;
 }
 
 .imagen-index {
@@ -212,7 +225,7 @@ button {
 .btn-neon {
   position: relative;
   display: inline-block;
-  padding: 30px 60px;
+  padding: 25px 60px;
   color: aliceblue;
   letter-spacing: 4px;
   font-size: 1rem;
@@ -263,7 +276,7 @@ button {
 }
 
 .letrass--2 {
-  width: 900px;
+  width: 100%;
 }
 
 .imagen-index {
@@ -278,7 +291,8 @@ button {
   padding: 0px 0px 0px 700px;
   margin: -600px 0px 200px 70px;
 }
-
+.logo-wat {
+}
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,6 +346,7 @@ button {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
+  padding: 2%;
 }
 
 .parrafos2 {
@@ -341,12 +356,26 @@ button {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: parrafos2;
-  padding: 10%;
+  padding: 4%;
   width: auto;
+}
+.menu-inicio {
+  display: grid;
+  grid-template-rows: auto auto;
+  -ms-grid-rows: auto auto;
+  grid-gap: 1% 1% 1%;
+  grid-template-areas: "listamenu logo-wat";
+  padding: 5px;
+  justify-content: space-between;
+}
+
+.logowat {
+  display: flex;
+  width: 10%;
 }
 
 .contenidoservicios {
-  display: -ms-grid;
+  display: grid;
   display: grid;
   grid-template-areas:
     "imagen-quienessomos parrafos1"
@@ -406,10 +435,9 @@ nav {
   width: auto;
 }
 
-/*mixin*/
 .mixin-1 {
   height: 50%;
-  width: 80%;
+  width: 60%;
   background-color: #000000;
 }
 
@@ -421,7 +449,40 @@ nav {
 
 .parrafowid {
   height: 120%;
-  width: 70%;
+  width: 60%;
   color: cadetblue;
 }
+
+.final--cuerpo {
+  padding: 5px;
+}
 /*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 927px) {
+  .logitos {
+    display: none;
+  }
+}
+@media screen and (max-width: 1067px) {
+  .imagen-index {
+    display: none;
+  }
+}
+@media screen and (max-width: 1068px) {
+  .parrafowid {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1068px) {
+  .mixin-1 {
+    width: 100%;
+  }
+}
+
+  
+}
+@media screen and (min-width: 400px) {
+  .menuhamburguesa {
+    display: none;
+  }
+}
+.collapse {background-color: #000000;}

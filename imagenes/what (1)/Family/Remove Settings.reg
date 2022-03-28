@@ -1,0 +1,6 @@
+REGEDIT4
+;
+;simple Jnes uninstall script by Gent
+;
+
+[-HKEY_CURRENT_USER\Software\JaboSoft\Jnes\0.6]
