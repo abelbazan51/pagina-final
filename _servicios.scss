@@ -1,34 +1,20 @@
 @import url(_variables.scss);
 section {
   .contenidoservicios {
-    display: -ms-grid;
-    display: grid;
-    display: grid;
-    grid-template-areas:
-      "imagen-quienessomos parrafos1"
-      "parrafos2 imagencajita2";
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
     background-color: $colorparrafos;
-    grid-gap: 1% 2%;
+
     padding: auto;
     width: 80%;
   }
 
   .parrafos1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: imagen-quienessomos;
-    display: -ms-grid;
-    display: grid;
-
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
     padding: 2%;
   }
   .titulo--grande {
-    width: 800px;
+    width: 100%;
     color: turquoise;
     font-size: 34px;
   }
@@ -37,9 +23,5 @@ section {
     font-size: 22px;
     padding: 10px;
     width: 90%;
-  }
-
-  .parrafos4 {
-    width: auto;
   }
 }
