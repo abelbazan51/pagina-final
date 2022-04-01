@@ -1,0 +1,49 @@
+article {
+  .contacto-pie {
+    background-color: #272626;
+    width: 100%;
+    padding: 2rem;
+    -webkit-box-shadow: 0rem 10px 30px -10px #e40808;
+    box-shadow: 0rem 10px 30px -10px #e40808;
+    margin: 16px 20px 40px 20px;
+  }
+
+  .btn-neon {
+    position: relative;
+    display: inline-block;
+
+    color: aliceblue;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+
+  .btn-neon:hover {
+    background: #800d0d;
+    -webkit-box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
+    box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
+    -webkit-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+  }
+  .tituloquienessomos2 {
+    color: aqua;
+  }
+}
+section {
+  .div-quienessomos {
+    background-color: #433133;
+    padding: 3%;
+  }
+  .tituloquienessomos2 {
+    color: aqua;
+  }
+  .cuerpo1--parrafo {
+    color: snow;
+    font-size: 22px;
+    padding: 10px;
+    width: 90%;
+  }
+}

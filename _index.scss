@@ -1,0 +1,117 @@
+header {
+  .flex-cabezerademenu {
+    background-color: black;
+    font-size: 0.1rem;
+    width: top;
+  }
+  .menu-inicio {
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: auto auto;
+    -ms-grid-rows: auto auto;
+    grid-gap: 1% 1% 1%;
+    grid-template-areas: "listamenu logo-wat";
+    padding: 5px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: $colorfondo;
+  }
+
+  .listamenu {
+    margin-bottom: auto;
+  }
+  .btn-neon {
+    position: relative;
+    display: inline-block;
+
+    color: aliceblue;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+
+  .btn-neon:hover {
+    background: #800d0d;
+    -webkit-box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
+    box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
+    -webkit-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+  }
+
+  .btn-neon span {
+    position: absolute;
+    display: block;
+  }
+
+  #span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(transparent),
+      to(#f00909)
+    );
+    background: linear-gradient(90deg, transparent, #f00909);
+  }
+
+  .btn-neon:hover #span1 {
+    left: 100%;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+}
+
+section {
+  .tarjeta {
+    background-color: black;
+    overflow: 100%;
+    color: $colorfondo;
+  }
+
+  .porqueelejirnos1 {
+    font-size: 20px;
+    padding: 1%;
+    background-color: $colorfondo;
+  }
+
+  .mixin-1 {
+    height: 50%;
+    width: 60%;
+    background-color: $colorfondo;
+  }
+
+  footer {
+    .logitos {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: auto;
+      align-content: auto;
+      background-color: $colorfondo;
+    }
+    .contacto-pie {
+      background-color: #272626;
+      width: 100%;
+      padding: 2rem;
+      -webkit-box-shadow: 0rem 10px 30px -10px #e40808;
+      box-shadow: 0rem 10px 30px -10px #e40808;
+      margin: 16px 20px 40px 20px;
+    }
+    .piedepagina {
+      font-size: 15px;
+      background-color: black;
+      color: aliceblue;
+    }
+    .final--cuerpo {
+      padding: 10px;
+    }
+  }
+}

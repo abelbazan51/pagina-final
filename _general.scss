@@ -1,4 +1,3 @@
-@import url(_variables.scss);
 * {
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -20,7 +19,6 @@
 .titulo-quienesosmos {
   color: aqua;
 }
-
 .tarjeta {
   background-color: black;
   overflow: 100%;
@@ -30,7 +28,6 @@
 .letramenu {
   color: darkgrey;
 }
-
 .navcollapse .parrafo1 {
   color: #7ad691;
 }
@@ -41,13 +38,14 @@
 
 html {
   width: 100%;
-  background-color: #433133;
+  background-color: $colorfondo;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: auto;
-  background-color: #433133;
+  background-color: $colorfondo;
   width: 100%;
   color: black;
   margin: 1%;
@@ -64,14 +62,12 @@ body {
 }
 
 .div-quienessomos {
-  background-color: #433133;
+  background-color: $colorfondo;
   padding: 3%;
 }
-
 .listamenu {
   margin-bottom: auto;
 }
-
 .logos1 {
   font-size: 8px;
 }
@@ -189,7 +185,7 @@ button {
   display: flex;
   -ms-flex-line-pack: auto;
   align-content: auto;
-  background-color: #433133;
+  background-color: $colorfondo;
 }
 
 .bloques1 {
@@ -251,7 +247,13 @@ button {
   left: -100%;
   width: 100%;
   height: 4px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#f00909));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    to(#f00909)
+  );
   background: linear-gradient(90deg, transparent, #f00909);
 }
 
@@ -323,7 +325,7 @@ button {
   display: -ms-grid;
   display: grid;
   padding: 10%;
-  background-color: #433133;
+  background-color: $colorfondo;
   color: #bdbdbd;
 }
 
@@ -337,35 +339,30 @@ button {
   padding: 4%;
   width: 99%;
 }
-
 .menu-inicio {
-  display: -ms-grid;
   display: grid;
   grid-template-rows: auto auto;
   -ms-grid-rows: auto auto;
   grid-gap: 1% 1% 1%;
-      grid-template-areas: "listamenu logo-wat";
+  grid-template-areas: "listamenu logo-wat";
   padding: 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .logowat {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 10%;
 }
 
 .contenidoservicios {
-  display: -ms-grid;
   display: grid;
   display: grid;
-      grid-template-areas: "imagen-quienessomos parrafos1" "parrafos2 imagencajita2";
+  grid-template-areas:
+    "imagen-quienessomos parrafos1"
+    "parrafos2 imagencajita2";
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
-  background-color: #433133;
+  background-color: $colorfondo;
   grid-gap: 1% 2%;
   padding: auto;
   width: auto;
@@ -439,24 +436,22 @@ nav {
 .final--cuerpo {
   padding: 10px;
 }
+/*# sourceMappingURL=style.css.map */
 @media screen and (max-width: 927px) {
   .logitos {
     display: none;
   }
 }
-
 @media screen and (max-width: 1067px) {
   .imagen-index {
     display: none;
   }
 }
-
 @media screen and (max-width: 1068px) {
   .parrafowid {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 1068px) {
   .mixin-1 {
     width: 100%;
@@ -468,211 +463,8 @@ nav {
     display: none;
   }
 }
-
 @media screen and (max-width: 1068px) {
   .parrafowid {
     width: 95%;
   }
 }
-
-section .contenidoservicios {
-  display: -ms-grid;
-  display: grid;
-  display: grid;
-      grid-template-areas: "imagen-quienessomos parrafos1" "parrafos2 imagencajita2";
-  -ms-grid-rows: auto auto;
-  grid-template-rows: auto auto;
-  background-color: turquoise;
-  grid-gap: 1% 2%;
-  padding: auto;
-  width: 80%;
-}
-
-section .parrafos1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: imagen-quienessomos;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: start;
-  padding: 2%;
-}
-
-section .titulo--grande {
-  width: 800px;
-  color: turquoise;
-  font-size: 34px;
-}
-
-section .cuerpo1--parrafo {
-  color: snow;
-  font-size: 22px;
-  padding: 10px;
-  width: 90%;
-}
-
-section .parrafos4 {
-  width: auto;
-}
-
-article .contacto-pie {
-  background-color: #272626;
-  width: 100%;
-  padding: 2rem;
-  -webkit-box-shadow: 0rem 10px 30px -10px #e40808;
-  box-shadow: 0rem 10px 30px -10px #e40808;
-  margin: 16px 20px 40px 20px;
-}
-
-article .btn-neon {
-  position: relative;
-  display: inline-block;
-  color: aliceblue;
-  letter-spacing: 4px;
-  font-size: 1rem;
-  text-decoration: none;
-  overflow: hidden;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-article .btn-neon:hover {
-  background: #800d0d;
-  -webkit-box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
-  box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
-  -webkit-transition-delay: 0.7s;
-  transition-delay: 0.7s;
-}
-
-article .tituloquienessomos2 {
-  color: aqua;
-}
-
-section .div-quienessomos {
-  background-color: #433133;
-  padding: 3%;
-}
-
-section .tituloquienessomos2 {
-  color: aqua;
-}
-
-section .cuerpo1--parrafo {
-  color: snow;
-  font-size: 22px;
-  padding: 10px;
-  width: 90%;
-}
-
-header .flex-cabezerademenu {
-  background-color: black;
-  font-size: 0.1rem;
-  width: top;
-}
-
-header .menu-inicio {
-  display: -ms-grid;
-  display: grid;
-  grid-template-rows: auto auto;
-  -ms-grid-rows: auto auto;
-  grid-gap: 1% 1% 1%;
-      grid-template-areas: "listamenu logo-wat";
-  padding: 5px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  color: #433133;
-}
-
-header .listamenu {
-  margin-bottom: auto;
-}
-
-header .btn-neon {
-  position: relative;
-  display: inline-block;
-  color: aliceblue;
-  letter-spacing: 4px;
-  font-size: 1rem;
-  text-decoration: none;
-  overflow: hidden;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-header .btn-neon:hover {
-  background: #800d0d;
-  -webkit-box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
-  box-shadow: 0 0 4px #e90303f6, 0 0 30px #db0a0a, 0 0 80px #c40303;
-  -webkit-transition-delay: 0.7s;
-  transition-delay: 0.7s;
-}
-
-header .btn-neon span {
-  position: absolute;
-  display: block;
-}
-
-header #span1 {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 4px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#f00909));
-  background: linear-gradient(90deg, transparent, #f00909);
-}
-
-header .btn-neon:hover #span1 {
-  left: 100%;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-section .tarjeta {
-  background-color: black;
-  overflow: 100%;
-  color: #433133;
-}
-
-section .porqueelejirnos1 {
-  font-size: 20px;
-  padding: 1%;
-  background-color: #433133;
-}
-
-section .mixin-1 {
-  height: 50%;
-  width: 60%;
-  background-color: #433133;
-}
-
-section footer .logitos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: auto;
-  align-content: auto;
-  background-color: #433133;
-}
-
-section footer .contacto-pie {
-  background-color: #272626;
-  width: 100%;
-  padding: 2rem;
-  -webkit-box-shadow: 0rem 10px 30px -10px #e40808;
-  box-shadow: 0rem 10px 30px -10px #e40808;
-  margin: 16px 20px 40px 20px;
-}
-
-section footer .piedepagina {
-  font-size: 15px;
-  background-color: black;
-  color: aliceblue;
-}
-
-section footer .final--cuerpo {
-  padding: 10px;
-}
-/*# sourceMappingURL=style.css.map */
